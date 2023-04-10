@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Center image */
+      .centered-image {
+        position: relative;
+        text-align: center;
+      }
+      
+      .centered-image img {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      /* Button grid */
+      .button-grid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px;
+        padding: 20px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+      }
+      
+      .button-grid button {
+        font-size: 24px;
+        border: none;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+        padding: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="centered-image">
+      <img src="https://preview.redd.it/6kjirbrjzmz91.jpg?width=5000&format=pjpg&auto=webp&v=enabled&s=2664133e9a96e11e0bbd195460d9eeb556ad355a" alt="Your Image" width="450px" height="450px">
+      <div class="button-grid">
+        <button>Button 1</button>
+        <button>Button 2</button>
+        <button>Button 3</button>
+        <button>Button 4</button>
+        <button>Button 5</button>
+        <button>Button 6</button>
+        <button>Button 7</button>
+        <button>Button 8</button>
+        <button>Button 9</button>
+      </div>
+    </div>
+    <!-- Rest of your webpage content -->
+  </body>
+</html>

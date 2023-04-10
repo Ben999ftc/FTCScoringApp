@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Counter Boxes</title>
+    <style>
+      /* Styling the counter boxes */
+      .counter-box {
+        display: inline-flex;
+        align-items: center;
+        width: 160px;
+        height: 60px;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 24px;
+      }
+      .counter-box h2 {
+        margin: 0;
+        width: 50px;
+        text-align: center;
+      }
+      .counter-box button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: #ccc;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .counter-box button:hover {
+        background-color: #999;
+      }
+      .counter-box button:active {
+        background-color: #666;
+      }
+      .counter-box .minus {
+        margin-right: 10px;
+      }
+      .counter-box .plus {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+      <div class="counter-box">
+        <button class="minus">-</button>
+        <h2 class="count">0</h2>
+        <button class="plus">+</button>
+      </div>
+    </div>
+    <script>
+      // Adding functionality to the plus and minus buttons
+      const counters = document.querySelectorAll('.count');
+      const plusButtons = document.querySelectorAll('.plus');
+      const minusButtons = document.querySelectorAll('.minus');
+      
+      for (let i = 0; i < plusButtons.length; i++) {
+        let count = 0;
+        plusButtons[i].addEventListener('click', function() {
+          count++;
+          counters[i].textContent = count;
+        });
+        
+        minusButtons[i].addEventListener('click', function() {
+          if (count > 0) {
+            count--;
+            counters[i].textContent = count;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

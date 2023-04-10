@@ -1,0 +1,125 @@
+div.field{
+	text-align: center;
+}
+div.header{
+	text-align: center;
+	background-color: black;
+	margin: 0px;
+	color: white;
+}
+h1{
+	color: white;
+	margin-top: 0px;
+}
+h2{
+  text-align: center;
+}
+button{
+	width: 120px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+  button:hover{
+    background-color: #dddddd;
+  }
+input[type="checkbox"]{
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+.counter-box {
+  display: inline-flex;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+}
+  .counter-box h3 {
+    margin: 0;
+    width: 50px;
+    text-align: center;
+  }
+  .counter-box button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #ccc;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+
+  }
+  .counter-box button:hover {
+    background-color: #999;
+  }
+  .counter-box button:active {
+    background-color: #666;
+  }
+  .counter-box .minus {
+    margin-right: 10px;
+  }
+  .counter-box .plus {
+    margin-left: 10px;
+  }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+  .column{
+    text-align: center;
+  }
+  .middle-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+  .grid-item {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+    .grid-item:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+  .grid button{
+    border-radius: 50%;
+    background-color: white;
+    border-color: black;
+    width: 50px;
+    height: 50px;
+  }
+#reset{
+  display: block;
+  width: 80px;
+  height: 30px;
+  margin: 10px auto;
+}
+#terminalTop{
+  height: 70px;
+  width: 70px;
+  float: left;
+}
+#terminalBottom{
+  height: 70px;
+  width: 70px;
+  float: right;
+}
